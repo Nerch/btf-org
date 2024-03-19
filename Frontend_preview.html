@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbeitsplaner</title>
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <h1>Arbeitsplaner</h1>
+
+    <form id="personForm">
+        <label for="nickname">Spitzname:</label>
+        <input type="text" id="nickname" name="nickname" required>
+        <p>Ernährung</p>
+        <label><input type="checkbox" name="day2_vegan" checked>Vegan</label>
+        <label><input type="checkbox" name="day2_carnivore">Kanibale</label>
+
+        <h2>Arbeitseinsätze</h2>
+
+        <div class="workdays">
+            <!-- Tag 1 -->
+            <hr>
+            <div class="workday">
+                <h3>20. Juni</h3>
+                <label><input type="checkbox" name="day1_Job">Arbeitseinsatz</label>
+                <p>Essen.</p>
+                <label style="display: inline;"><input type="checkbox" name="day1_breakfast">Frühstück</label>
+                <label style="display: inline;"><input type="checkbox" name="day1_lunch">Mittag</label>
+                <label style="display: inline;"><input type="checkbox" name="day1_dinner">Abendessen</label><br>
+            </div>
+
+            <!-- Tag 2 -->
+            <hr>
+            <div class="workday">
+                <h3>21. Juni</h3>
+                <label><input type="checkbox" name="day2_Job">Arbeitseinsatz</label>
+                <p>Essen.</p>
+                <label style="display: inline;"><input type="checkbox" name="day2_breakfast">Frühstück</label>
+                <label style="display: inline;"><input type="checkbox" name="day2_lunch">Mittag</label>
+                <label style="display: inline;"><input type="checkbox" name="day2_dinner">Abendessen</label><br>
+
+            </div>
+
+            <!-- Weitere Arbeitstage hinzufügen -->
+
+            <!-- Tag 10 -->
+            <hr>
+            <div class="workdays">
+                <!-- Tag 1 -->
+                <div class="workday">
+                    <h3>30. Juni</h3>
+                    <label><input type="checkbox" name="day30_Job">Arbeitseinsatz</label>
+                    <p>Essen.</p>
+                    <label style="display: inline;"><input type="checkbox" name="day30_breakfast">Frühstück</label>
+                    <label style="display: inline;"><input type="checkbox" name="day30_lunch">Mittag</label>
+                    <label style="display: inline;"><input type="checkbox" name="day30_dinner">Abendessen</label><br>
+                </div>
+        </div>
+
+        <button type="submit">Absenden</button>
+    </form>
+</body>
+</html>
